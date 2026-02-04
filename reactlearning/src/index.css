@@ -8,10 +8,10 @@
 }
 
 body {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(210, 105, 30, 0.628);
-  color: aliceblue;
+  /* background-color:  */
+  color: black;
 }
