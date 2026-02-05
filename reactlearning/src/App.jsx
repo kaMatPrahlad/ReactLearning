@@ -57,7 +57,9 @@ function App() {
       <p>Im inside Parent componet:{name}</p> */}
 
       {/* 6. Conditional Rendering */}
-      <div>{isLogin ? <Logout /> : <LoginBtn />}</div>
+      {/* <div>{isLogin ? <Logout /> : <LoginBtn />}</div> */}
+
+      {/* 7. Event Handling in React */}
     </>
   );
 }
