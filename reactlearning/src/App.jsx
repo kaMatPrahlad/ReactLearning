@@ -9,6 +9,7 @@ import { useState } from "react";
 import State_Lifting from "./components/State_Lifting";
 import Logout from "./components/Logout";
 import LoginBtn from "./components/LoginBtn";
+import Handling from "./components/Handling";
 
 function App() {
   const [isLogin, setIsLogin] = useState(true);
@@ -60,6 +61,8 @@ function App() {
       {/* <div>{isLogin ? <Logout /> : <LoginBtn />}</div> */}
 
       {/* 7. Event Handling in React */}
+      <Handling />
+     
     </>
   );
 }
