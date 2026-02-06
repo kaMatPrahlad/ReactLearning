@@ -9,3 +9,4 @@ All Important Topics to master in react:-
 5. State Lifting in React
 6. Conditional Rendering
 7. Event Handling
+8. useEffect HOOK in depth
