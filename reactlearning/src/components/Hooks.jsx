@@ -57,7 +57,7 @@ const Hooks = () => {
     const interval = setInterval(() => {
       console.log("SetInterval running");
       setSeconds((prev) => prev + 1);
-    }, 1000);
+    },1000); 
 
     return () => {
       clearInterval(interval);
@@ -67,24 +67,25 @@ const Hooks = () => {
   // function handleClick() {
   //   setCount(count + 1);
   // }
-  // function handleTotalClick() {
-  //   setTotal(total + 1);
-  // }
+  function handleTotalClick() {
+    setTotal(total + 1);
+  }
 
-  // return (
-  //   <div>
-  //     <h1>All About UseEffect</h1>
-  //     {/* <button onClick={() => setCount(count + 1)}>Click me</button>
-  //     <button onClick={handleClick}>Update Count</button>
-  //     <br />
-  //     <div>Count is {count}</div>
-  //     <br />
-  //     <button onClick={handleTotalClick}>Update Total</button>
-  //     <br />
-  //     <div>Total is {total}</div> */}
-  <div>Time is {seconds}</div>;
-  //   </div>
-  // );
+  return (
+    <div>
+      <h1>All About UseEffect</h1>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
+      {/* <button onClick={handleClick}>Update Count</button> */}
+      <br />
+      <div>Count is {count}</div>
+      <br />
+      <button onClick={handleTotalClick}>Update Total</button>
+      <br />
+      <div>Total is {total}</div>
+      {/* // It will run every second: */}
+      <div>Time is {seconds}</div>
+    </div>
+  );
 };
 
 export default Hooks;
