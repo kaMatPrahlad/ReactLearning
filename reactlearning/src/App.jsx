@@ -11,6 +11,7 @@ import Logout from "./components/Logout";
 import LoginBtn from "./components/LoginBtn";
 import Handling from "./components/Handling";
 import Hooks from "./components/Hooks";
+import Parent from "./components/Parent";
 
 function App() {
   const [isLogin, setIsLogin] = useState(true);
@@ -65,7 +66,10 @@ function App() {
       {/* <Handling /> */}
 
       {/* 8. useEffect HOOK in depth */}
-      <Hooks />
+      {/* <Hooks /> */}
+
+      {/* 9. UseContext Hook  */}
+      <Parent />
     </>
   );
 }

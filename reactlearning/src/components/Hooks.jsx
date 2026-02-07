@@ -57,9 +57,10 @@ const Hooks = () => {
     const interval = setInterval(() => {
       console.log("SetInterval running");
       setSeconds((prev) => prev + 1);
-    },1000); 
+    }, 1000);
 
     return () => {
+      console.log("Cleaning up interval /Time to stop the timer");
       clearInterval(interval);
     };
   }, []);
@@ -70,6 +71,10 @@ const Hooks = () => {
   function handleTotalClick() {
     setTotal(total + 1);
   }
+
+  useEffect(() => {
+    console.log("Count changed:", count);
+  }, [count]);
 
   return (
     <div>
