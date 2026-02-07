@@ -20,7 +20,7 @@ const userContext = React.createContext();
 // Step 1: Create a context
 // Step 2: Wrap all the child components inside a provider
 // Step 3: Provide a value to the provider
-// Step 4: Consume the context value in any child
+// Step 4: Consume the context value in child
 //  component using useContext hook [Consumar k under jake consume karo ]
 
 const Parent = () => {

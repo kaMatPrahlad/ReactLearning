@@ -12,6 +12,7 @@ import LoginBtn from "./components/LoginBtn";
 import Handling from "./components/Handling";
 import Hooks from "./components/Hooks";
 import Parent from "./components/Parent";
+import Theme from "./components/Theme";
 
 function App() {
   const [isLogin, setIsLogin] = useState(true);
@@ -69,7 +70,12 @@ function App() {
       {/* <Hooks /> */}
 
       {/* 9. UseContext Hook  */}
-      <Parent />
+      {/* <Parent /> */}
+
+      {/* // Second example of useContext Hook we are creating
+       a theme context to change the theme of our app */}
+      <Theme />
+
     </>
   );
 }

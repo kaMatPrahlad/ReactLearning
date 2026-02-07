@@ -1,12 +1,24 @@
-import React, { useContext } from "react";
+import React, { Children, useContext } from "react";
 import { userContext } from "./Parent";
+import { ThemeContext } from "./Theme";
 
-const ChildC = () => {
-  const user = useContext(userContext);
+const ChildC = ({}) => {
+  // const user = useContext(userContext);
+  const { theme, setTheme } = useContext(ThemeContext);
   return (
     <div>
-      ChildC
-      <h1>{user.name}</h1>
+      {/* {/* {/* <div className="childC">
+        Hello from ChildC
+        {/* <h1>{user.name}</h1> */}
+      {/* </div>  */}
+
+      <div>
+        <p>Current Theme: {theme}</p>
+        <button onClick={() => setTheme(theme === "light" ? "dark" : "light")}>
+          Click me
+        </button>
+        {/* </div> */}
+      </div>
     </div>
   );
 };
