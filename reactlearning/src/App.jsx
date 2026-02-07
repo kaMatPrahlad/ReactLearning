@@ -13,6 +13,8 @@ import Handling from "./components/Handling";
 import Hooks from "./components/Hooks";
 import Parent from "./components/Parent";
 import Theme from "./components/Theme";
+import ReactRouting from "./components/ReactRouting";
+// import "App.css"
 
 function App() {
   const [isLogin, setIsLogin] = useState(true);
@@ -29,6 +31,7 @@ function App() {
       {/* <UserCard className="container" /> */}
       {/* <UserCard /> */}
       {/* <UserCard /> */}
+
       {/* // 2- Props */}
       {/* Props are the inputs you pass into a component, like arguments to a function, so you can configure how it renders. */}
 
@@ -74,8 +77,10 @@ function App() {
 
       {/* // Second example of useContext Hook we are creating
        a theme context to change the theme of our app */}
-      <Theme />
+      {/* <Theme /> */}
 
+      {/* 10.All about Routing in React 2024 */}
+      <ReactRouting />
     </>
   );
 }
