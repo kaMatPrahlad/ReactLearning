@@ -19,7 +19,7 @@ import NotFound from "./NotFound";
 // 1. Routing
 // 2. Dynamic Routing
 // 3. NavLink / Link
-// 4. Parameter using useParams
+// 4. Parameter using useParams/ Passing parameter in URL
 // 5. useNavigate
 // 6. Nested Routing
 

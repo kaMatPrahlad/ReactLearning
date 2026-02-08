@@ -14,6 +14,7 @@ import Hooks from "./components/Hooks";
 import Parent from "./components/Parent";
 import Theme from "./components/Theme";
 import ReactRouting from "./components/ReactRouting";
+import ReactForm from "./components/ReactForm";
 // import "App.css"
 
 function App() {
@@ -74,13 +75,15 @@ function App() {
 
       {/* 9. UseContext Hook  */}
       {/* <Parent /> */}
-
       {/* // Second example of useContext Hook we are creating
        a theme context to change the theme of our app */}
       {/* <Theme /> */}
 
       {/* 10.All about Routing in React 2024 */}
-      <ReactRouting />
+      {/* <ReactRouting /> */}
+
+      {/* 11. React Hook Form */}
+      <ReactForm />
     </>
   );
 }
