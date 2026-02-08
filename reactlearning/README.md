@@ -1,6 +1,6 @@
 // *️⃣ Everything About React and redux toolkit from scratch to pro developer.
 
-All Important Topics to master in react:-
+All Important Topics to master in React:-
 
 1. Learn all about Components
 2. Props
@@ -10,6 +10,5 @@ All Important Topics to master in react:-
 6. Conditional Rendering
 7. Event Handling
 8. useEffect HOOK in depth
-9. UseContext Hook 
-10. All about Routing in React 2024
-
+9. UseContext Hook
+10. All about Routing in React
