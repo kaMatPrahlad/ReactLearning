@@ -5,16 +5,33 @@ const ReactForm = () => {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors, isSubmitting },
   } = useForm();
 
-  const onSubmit = (data) => {
-    console.log("Submitting data", data);
-  };
+  async function onSubmit(data) {
+    console.log("Submitting data");
+    await new Promise((resolve) => setTimeout(() => resolve(), 3000));
+
+    console.log("Succesfully data submitted", data);
+  }
+
+  //   Basic form Handling
+  //   1. Create form element with onSubmit handler
+  //   2. fields register
+  //   3. onSubmit handler
+  //   4. form validation
+  //   5. Error Handling
+  //   6. Styling Error Messages
+  //  7. Disable submit button while submitting
+  //  8. Prevent Multipe submitting using issubmitting state
+
   return (
     <div>
       <h1>React Hook Form</h1>
-      <form onSubmit={handleSubmit(onSubmit)}>
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        style={{ display: "flex", flexDirection: "column", gap: "1rem" }}
+      >
         <div>
           <label htmlFor="name">Name</label>
           <input
@@ -59,18 +76,29 @@ const ReactForm = () => {
             })}
           />
           {errors.lastname && (
-            <p style={{ color: "red" }}>{errors.lastname.required}</p>
+            <p style={{ color: "red" }}>{errors.lastname.message}</p>
           )}
         </div>
         <div>
           <label htmlFor="gender">Gender Selection: </label>
-          <select id="gender" {...register("gender")}>
+          <select
+            id="gender"
+            {...register("gender", { required: "Select gender is required" })}
+          >
+            <option value="">Select Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
           </select>
+          {errors.gender && (
+            <p style={{ color: "red" }}>{errors.gender.message}</p>
+          )}
         </div>
-        <input type="submit" />
+        <input
+          type="submit"
+          disabled={isSubmitting}
+          value={isSubmitting ? "Submitting..." : "Submit"}
+        />
       </form>
     </div>
   );

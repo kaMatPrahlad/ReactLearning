@@ -19,7 +19,7 @@ import ReactForm from "./components/ReactForm";
 
 function App() {
   const [isLogin, setIsLogin] = useState(true);
-  // const [name, setName] = useState("");
+  const [name, setName] = useState("");
   // const [count, setCount] = useState(0);
   // const handleClick = () => {
   //   setCount(count + 1);
@@ -56,13 +56,14 @@ function App() {
       </div>*/}
 
       {/* <!-- 5. State Lifting in React --> */}
-      {/* // Create state */}
-      {/* manage state  */}
-      {/* change state  */}
-      {/* Will sync state in every child component */}
+      {/* Create state 
+       manage state  
+       change state  
+       Will sync state in every child component  */}
+
       {/* <State_Lifting title="Card1" name={name} setName={setName} />
-      <State_Lifting title="Card2" name={name} setName={setName} />
-      <p>Im inside Parent componet:{name}</p> */}
+      <State_Lifting title="Card2" name={name} setName={setName} /> */}
+      {/* <p>Im inside Parent componet:{name}</p> */}
 
       {/* 6. Conditional Rendering */}
       {/* <div>{isLogin ? <Logout /> : <LoginBtn />}</div> */}
@@ -83,8 +84,11 @@ function App() {
       {/* <ReactRouting /> */}
 
       {/* 11. React Hook Form */}
-      <ReactForm />
+      {/* <ReactForm /> */}
     </>
+
+    // 12. React Redux Toolkit
+    
   );
 }
 

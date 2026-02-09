@@ -13,3 +13,4 @@ All Important Topics to master in React:-
 9. UseContext Hook
 10. All about Routing in React
 11. React Hook Form 
+12. React Redux Toolkit
