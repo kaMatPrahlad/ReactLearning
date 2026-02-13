@@ -13,8 +13,10 @@ const UseRef = () => {
     }, 1000);
   }
   function stopTime() {
-    clearInterval(timeRef.current);
-    timeRef.current = null;
+    // clearInterval(timeRef.current);
+    // timeRef.current = null;
+    const internalId = timeRef.current;
+    clearInterval(internalId);
   }
   function resetTime() {
     stopTime();
