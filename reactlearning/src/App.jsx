@@ -16,6 +16,7 @@ import Theme from "./components/Theme";
 import ReactRouting from "./components/ReactRouting";
 import ReactForm from "./components/ReactForm";
 import { Counter } from "./features/counter/counter";
+import UseRef from "./components/UseRef";
 // import "App.css"
 
 function App() {
@@ -77,7 +78,10 @@ function App() {
       {/* <ReactForm /> */}
 
       {/* // 12. React Redux Toolkit */}
-      <Counter />
+      {/* <Counter /> */}
+
+      {/* 13. UseRef React Hook */}
+      <UseRef />
     </>
   );
 }
