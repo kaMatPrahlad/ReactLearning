@@ -18,6 +18,7 @@ import ReactForm from "./components/ReactForm";
 import { Counter } from "./features/counter/counter";
 import UseRef from "./components/UseRef";
 import UseMemo from "./components/UseMemo";
+import Callback from "./components/Callback";
 // import "App.css"
 
 function App() {
@@ -86,7 +87,10 @@ function App() {
        */}
 
       {/* 14. UseMemo Hook in React */}
-      <UseMemo />
+      {/* <UseMemo />
+       */}
+      {/* 15. UseCallback Hook in React */}
+      <Callback />
     </>
   );
 }
