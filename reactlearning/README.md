@@ -15,3 +15,4 @@ All Important Topics to master in React:-
 11. React Hook Form 
 12. React Redux Toolkit
 13. UseRef React Hook
+14. UseMemo Hook in React

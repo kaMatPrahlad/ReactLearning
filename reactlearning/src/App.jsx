@@ -17,6 +17,7 @@ import ReactRouting from "./components/ReactRouting";
 import ReactForm from "./components/ReactForm";
 import { Counter } from "./features/counter/counter";
 import UseRef from "./components/UseRef";
+import UseMemo from "./components/UseMemo";
 // import "App.css"
 
 function App() {
@@ -81,7 +82,11 @@ function App() {
       {/* <Counter /> */}
 
       {/* 13. UseRef React Hook */}
-      <UseRef />
+      {/* <UseRef />
+       */}
+
+      {/* 14. UseMemo Hook in React */}
+      <UseMemo />
     </>
   );
 }
