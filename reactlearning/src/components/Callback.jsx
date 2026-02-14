@@ -1,8 +1,12 @@
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import Childcomponent from "./Childcomponent";
 
 const Callback = () => {
   const [count, setCount] = useState(0);
+  const handleClick = useCallback(() => {
+    setCount(count + 1);
+  }, [count]);
+
   return (
     <div>
       <h1>UseCallback Hook in React</h1>
@@ -11,13 +15,13 @@ const Callback = () => {
          for optimizing performance by preventing unnecessary re-renders of child components 
          that rely on the callback function.</p> */}
 
-      <button onClick={() => setCount(count + 1)}>Click me</button>
+      <button onClick={handleClick}>Click me</button>
       <br />
       <br />
       <p>count: {count}</p>
       <br />
       <br />
-      <Childcomponent buttonName="Click me" />
+      <Childcomponent handleClick={handleClick} buttonName="Click me" />
     </div>
   );
 };
